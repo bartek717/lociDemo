@@ -24,7 +24,6 @@ export default function Home() {
     getProducts();
   }, []);
 
-  // Function to fetch sub-products based on the product clicked
   useEffect(() => {
     if (!activeProduct) return;
 
@@ -45,7 +44,7 @@ export default function Home() {
   }, [activeProduct]);
 
   const handleProductClick = (product) => {
-    setActiveProduct(product); // set the active product which will trigger the subProducts fetch
+    setActiveProduct(product); 
   };
 
   return (
